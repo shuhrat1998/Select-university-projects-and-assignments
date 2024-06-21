@@ -1,0 +1,229 @@
+DASC501	   Affinity analysis (multiple LHS)	@author: Shukhrat Khuseynov
+
+The rules:
+1. bread -> milk:
+   Support = 0.13 Confidence = 0.46 Lift = 0.89   
+
+2. bread -> cheese:
+   Support = 0.05 Confidence = 0.18 Lift = 0.46   
+
+3. bread -> apples:
+   Support = 0.09 Confidence = 0.32 Lift = 0.75   
+
+4. bread -> bananas:
+   Support = 0.16 Confidence = 0.57 Lift = 1.00   acceptable & interesting
+
+5. milk -> bread:
+   Support = 0.13 Confidence = 0.25 Lift = 0.89   
+
+6. milk -> cheese:
+   Support = 0.11 Confidence = 0.21 Lift = 0.54   
+
+7. milk -> apples:
+   Support = 0.18 Confidence = 0.35 Lift = 0.81   
+
+8. milk -> bananas:
+   Support = 0.27 Confidence = 0.52 Lift = 0.91   	acceptable
+
+9. cheese -> bread:
+   Support = 0.05 Confidence = 0.13 Lift = 0.46   
+
+10. cheese -> milk:
+   Support = 0.11 Confidence = 0.28 Lift = 0.54   
+
+11. cheese -> apples:
+   Support = 0.22 Confidence = 0.56 Lift = 1.31   acceptable & interesting
+
+12. cheese -> bananas:
+   Support = 0.20 Confidence = 0.51 Lift = 0.90   	acceptable
+
+13. apples -> bread:
+   Support = 0.09 Confidence = 0.21 Lift = 0.75   
+
+14. apples -> milk:
+   Support = 0.18 Confidence = 0.42 Lift = 0.81   
+
+15. apples -> cheese:
+   Support = 0.22 Confidence = 0.51 Lift = 1.31   acceptable & interesting
+
+16. apples -> bananas:
+   Support = 0.27 Confidence = 0.63 Lift = 1.10   acceptable & interesting
+
+17. bananas -> bread:
+   Support = 0.16 Confidence = 0.28 Lift = 1.00   	interesting
+
+18. bananas -> milk:
+   Support = 0.27 Confidence = 0.47 Lift = 0.91   
+
+19. bananas -> cheese:
+   Support = 0.20 Confidence = 0.35 Lift = 0.90   
+
+20. bananas -> apples:
+   Support = 0.27 Confidence = 0.47 Lift = 1.10   	interesting
+
+21. bread, milk -> cheese:
+   Support = 0.03 Confidence = 0.23 Lift = 0.59   
+
+22. bread, milk -> apples:
+   Support = 0.06 Confidence = 0.46 Lift = 1.07   	interesting
+
+23. bread, milk -> bananas:
+   Support = 0.07 Confidence = 0.54 Lift = 0.94   	acceptable
+
+24. bread, cheese -> milk:
+   Support = 0.03 Confidence = 0.60 Lift = 1.15   acceptable & interesting
+
+25. bread, cheese -> apples:
+   Support = 0.02 Confidence = 0.40 Lift = 0.93   
+
+26. bread, cheese -> bananas:
+   Support = 0.02 Confidence = 0.40 Lift = 0.70   
+
+27. bread, apples -> milk:
+   Support = 0.06 Confidence = 0.67 Lift = 1.28   acceptable & interesting
+
+28. bread, apples -> cheese:
+   Support = 0.02 Confidence = 0.22 Lift = 0.57   
+
+29. bread, apples -> bananas:
+   Support = 0.05 Confidence = 0.56 Lift = 0.97   	acceptable
+
+30. bread, bananas -> milk:
+   Support = 0.07 Confidence = 0.44 Lift = 0.84   
+
+31. bread, bananas -> cheese:
+   Support = 0.02 Confidence = 0.12 Lift = 0.32   
+
+32. bread, bananas -> apples:
+   Support = 0.05 Confidence = 0.31 Lift = 0.73   
+
+33. milk, cheese -> bread:
+   Support = 0.03 Confidence = 0.27 Lift = 0.97   
+
+34. milk, cheese -> apples:
+   Support = 0.05 Confidence = 0.45 Lift = 1.06   	interesting
+
+35. milk, cheese -> bananas:
+   Support = 0.04 Confidence = 0.36 Lift = 0.64   
+
+36. milk, apples -> bread:
+   Support = 0.06 Confidence = 0.33 Lift = 1.19   	interesting
+
+37. milk, apples -> cheese:
+   Support = 0.05 Confidence = 0.28 Lift = 0.71   
+
+38. milk, apples -> bananas:
+   Support = 0.09 Confidence = 0.50 Lift = 0.88   	acceptable
+
+39. milk, bananas -> bread:
+   Support = 0.07 Confidence = 0.26 Lift = 0.93   
+
+40. milk, bananas -> cheese:
+   Support = 0.04 Confidence = 0.15 Lift = 0.38   
+
+41. milk, bananas -> apples:
+   Support = 0.09 Confidence = 0.33 Lift = 0.78   
+
+42. cheese, apples -> bread:
+   Support = 0.02 Confidence = 0.09 Lift = 0.32   
+
+43. cheese, apples -> milk:
+   Support = 0.05 Confidence = 0.23 Lift = 0.44   
+
+44. cheese, apples -> bananas:
+   Support = 0.14 Confidence = 0.64 Lift = 1.12   acceptable & interesting
+
+45. cheese, bananas -> bread:
+   Support = 0.02 Confidence = 0.10 Lift = 0.36   
+
+46. cheese, bananas -> milk:
+   Support = 0.04 Confidence = 0.20 Lift = 0.38   
+
+47. cheese, bananas -> apples:
+   Support = 0.14 Confidence = 0.70 Lift = 1.63   acceptable & interesting
+
+48. apples, bananas -> bread:
+   Support = 0.05 Confidence = 0.19 Lift = 0.66   
+
+49. apples, bananas -> milk:
+   Support = 0.09 Confidence = 0.33 Lift = 0.64   
+
+50. apples, bananas -> cheese:
+   Support = 0.14 Confidence = 0.52 Lift = 1.33   acceptable & interesting
+
+51. bread, milk, cheese -> apples:
+   Support = 0.02 Confidence = 0.67 Lift = 1.55   acceptable & interesting
+
+52. bread, milk, cheese -> bananas:
+   Support = 0.01 Confidence = 0.33 Lift = 0.58   
+
+53. bread, milk, apples -> cheese:
+   Support = 0.02 Confidence = 0.33 Lift = 0.85   
+
+54. bread, milk, apples -> bananas:
+   Support = 0.03 Confidence = 0.50 Lift = 0.88   	acceptable
+
+55. bread, milk, bananas -> cheese:
+   Support = 0.01 Confidence = 0.14 Lift = 0.37   
+
+56. bread, milk, bananas -> apples:
+   Support = 0.03 Confidence = 0.43 Lift = 1.00   
+
+57. bread, cheese, apples -> milk:
+   Support = 0.02 Confidence = 1.00 Lift = 1.92   acceptable & interesting
+
+58. bread, cheese, apples -> bananas:
+	invalid!
+
+59. bread, cheese, bananas -> milk:
+   Support = 0.01 Confidence = 0.50 Lift = 0.96   	acceptable
+
+60. bread, cheese, bananas -> apples:
+	invalid!
+
+61. bread, apples, bananas -> milk:
+   Support = 0.03 Confidence = 0.60 Lift = 1.15   acceptable & interesting
+
+62. bread, apples, bananas -> cheese:
+	invalid!
+
+63. milk, cheese, apples -> bread:
+   Support = 0.02 Confidence = 0.40 Lift = 1.43   	interesting
+
+64. milk, cheese, apples -> bananas:
+   Support = 0.02 Confidence = 0.40 Lift = 0.70   
+
+65. milk, cheese, bananas -> bread:
+   Support = 0.01 Confidence = 0.25 Lift = 0.89   
+
+66. milk, cheese, bananas -> apples:
+   Support = 0.02 Confidence = 0.50 Lift = 1.16   acceptable & interesting
+
+67. milk, apples, bananas -> bread:
+   Support = 0.03 Confidence = 0.33 Lift = 1.19   	interesting
+
+68. milk, apples, bananas -> cheese:
+   Support = 0.02 Confidence = 0.22 Lift = 0.57   
+
+69. cheese, apples, bananas -> bread:
+	invalid!
+
+70. cheese, apples, bananas -> milk:
+   Support = 0.02 Confidence = 0.14 Lift = 0.27   
+
+71. bread, milk, cheese, apples -> bananas:
+	invalid!
+
+72. bread, milk, cheese, bananas -> apples:
+	invalid!
+
+73. bread, milk, apples, bananas -> cheese:
+	invalid!
+
+74. bread, cheese, apples, bananas -> milk:
+	invalid!
+
+75. milk, cheese, apples, bananas -> bread:
+	invalid!
+
+  (acceptable: confidence > 50% & interesting: positively associated)
