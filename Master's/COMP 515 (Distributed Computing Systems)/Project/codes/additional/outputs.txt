@@ -1,0 +1,137 @@
+### dchurn.py
+
+Logistic Regression
+
+Confusion matrix:
+[[9739  780]
+ [1031 1818]]
+Accuracy: 0.8645272292040694
+AUROC: 0.8887937690580443
+
+Random Forest classifier
+
+Confusion matrix:
+[[9717  802]
+ [ 898 1951]]
+Accuracy: 0.8728306403351287
+AUROC: 0.9004862784689738
+
+- Elapsed time: 126.63735389709473 seconds.
+
+
+*** churn.py
+
+Logistic Regression
+
+Accuracy: 0.8645253497818565
+AUROC: 0.7817785968657228
+Confusion matrix:
+[[9682  770]
+ [1031 1811]]
+
+Random Forest classifier
+
+Accuracy: 0.8692643297728299
+AUROC: 0.7842799953030818
+Confusion matrix:
+[[9749  703]
+ [1035 1807]]
+
+- Elapsed time: 12.60612940788269 seconds.
+
+
+### dhousing.py
+
+Linear regression
+Correlation: 0.8406081558720544
+RMSE: 27.50651961080339
+
+Random Forest regression
+Correlation: 0.8410204439870324
+RMSE: 27.473998458839905
+
+- Elapsed time: 23.571772575378418 seconds.
+
+
+*** housing.py
+
+Linear regression
+
+Correlation:
+ [[1.         0.82291632]
+ [0.82291632 1.        ]]
+RMSE:
+ 29.41189913898781
+
+Random Forest regression
+
+Correlation:
+ [[1.         0.86423448]
+ [0.86423448 1.        ]]
+RMSE:
+ 26.178041773516476
+
+- Elapsed time: 0.9875400066375732 seconds.
+
+
+### dreviews.py:
+
+Logistic Regression
+
+Confusion matrix:
+[[ 455  359]
+ [ 456 3250]]
+Accuracy: 0.8196902654867256
+AUROC: 0.7961705634398555
+
+Linear Support Vector Machines classifier
+
+Confusion matrix:
+[[ 372  442]
+ [ 141 3565]]
+Accuracy: 0.8710176991150442
+AUROC: 0.8982664409000076
+
+- Elapsed time: 82.95256042480469 seconds.
+
+(additional:)
+Naive Bayes classifier
+
+Confusion matrix:
+[[ 537  277]
+ [ 245 3461]]
+Accuracy: 0.8845132743362832
+AUROC: 0.532248322993061
+
+
+*** reviews.py:
+
+Logistic Regression
+
+Accuracy: 0.8854051667034666
+AUROC: 0.7829498776696919
+Confusion matrix:
+[[ 540  337]
+ [ 182 3470]]
+
+Linear Support Vector Machines classifier
+
+Accuracy: 0.8816515787149481
+AUROC: 0.7845213131993091
+Confusion matrix:
+[[ 549  328]
+ [ 208 3444]]
+
+- Elapsed time: 54.05869913101196 seconds.
+
+(additional:)
+Naive Bayes classifier
+
+Accuracy: 0.45904173106646057
+AUROC: 0.5514984682172247
+Confusion matrix:
+[[ 616  261]
+ [2189 1463]]
+
+
+-----
