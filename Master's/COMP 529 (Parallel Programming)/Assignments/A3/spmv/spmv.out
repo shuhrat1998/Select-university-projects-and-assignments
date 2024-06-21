@@ -1,0 +1,260 @@
+
+COMP 529 - Shukhrat Khuseynov - 0070495
+
+Setting stack size to unlimited...
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 2062720
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 204800000
+open files                      (-n) 51200
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) unlimited
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 4096
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+LSCPU:
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                72
+On-line CPU(s) list:   0-71
+Thread(s) per core:    2
+Core(s) per socket:    18
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 79
+Model name:            Intel(R) Xeon(R) CPU E5-2695 v4 @ 2.10GHz
+Stepping:              1
+CPU MHz:               1385.261
+CPU max MHz:           3300.0000
+CPU min MHz:           1200.0000
+BogoMIPS:              4190.31
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              46080K
+NUMA node0 CPU(s):     0-17,36-53
+NUMA node1 CPU(s):     18-35,54-71
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch epb cat_l3 cdp_l3 invpcid_single intel_pt spec_ctrl ibpb_support tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts
+
+Running Job...!
+===============================================================================
+Running compiled binary...
+
+Serial version...
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 5.370000 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 4.860000 sec 
+
+
+===============
+
+Parallel version with 1 process
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 6.342734 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 6.504535 sec 
+
+Parallel version with 2 processes
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 3.499558 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 3.317035 sec 
+
+Parallel version with 4 processes
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.992563 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 1.957023 sec 
+
+Parallel version with 8 processes
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.084171 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 0.974088 sec 
+
+Parallel version with 16 processes
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.134079 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 1.001157 sec 
+
+
+===============
+
+
+Parallel version with 1 process and 16 threads
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.264355 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 1.025610 sec 
+
+Parallel version with 2 processes and 8 threads
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.224191 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 1.146498 sec 
+
+Parallel version with 4 processes and 4 threads
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.178004 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 1.091468 sec 
+
+Parallel version with 8 processes and 2 threads
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.024981 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 0.911864 sec 
+
+Parallel version with 16 processes and 1 thread
+
+Reading .mtx file
+Cube_Coup_dt6/Cube_Coup_dt6.mtx
+Matrix Rows: 2164760
+Matrix Cols: 2164760
+Matrix nnz: 64685452
+Done reading file
+Time taken by program is : 1.170880 sec 
+
+Reading .mtx file
+Flan_1565/Flan_1565.mtx
+Matrix Rows: 1564794
+Matrix Cols: 1564794
+Matrix nnz: 59485419
+Done reading file
+Time taken by program is : 1.015415 sec 
+
+The end.
